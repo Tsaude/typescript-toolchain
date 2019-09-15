@@ -1,0 +1,24 @@
+{
+    "name": "@tsaude/typescript-toolchain",
+    "version": "1.0.0",
+    "description": "Common toolchain for creating typescript programs",
+    "license": "MIT",
+    "bin": {
+        "my-build": "bin/my-build.js"
+    },
+    "scripts": {
+        "build": "rimraf ./lib/ && tsc"
+    },
+    "dependencies": {
+        "@types/node": "^12.7.5",
+        "@typescript-eslint/eslint-plugin": "^2.2.0",
+        "@typescript-eslint/parser": "^2.2.0",
+        "colors": "^1.3.3",
+        "eslint": "^6.4.0",
+        "eslint-config-prettier": "^6.3.0",
+        "eslint-plugin-prettier": "^3.1.0",
+        "prettier": "^1.18.2",
+        "rimraf": "^3.0.0",
+        "typescript": "~3.6.3"
+    }
+}
